@@ -27,10 +27,14 @@ window.onerror = function(msg, url, line, col, error) {
     <h1>Testing swf2js</h1>
     <!-- If an unhandled error occurrs, show a dialog for information about the error and will not load the SWF. -->
     <script>
+      new Promise(function(resolve, reject) {
+
+
       function LoadSWF() {
-      swf2js.load('https://cdn.scratch.mit.edu/scratchr2/static/Scratch.swf');
+      swf2js.load('https://s3-us-west-2.amazonaws.com/rocketsnail/penguin/penguins-115-demo.swf');
       }
       LoadSWF();
+      });
     </script>
   </body>
   </html>
